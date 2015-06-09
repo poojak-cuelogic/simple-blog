@@ -7,13 +7,15 @@ class PostTest extends \Codeception\TestCase\Test
      * @var \UnitTester
      */
     protected $tester;
+    private $CI; 
 
-    protected function _before()
-    {
+    protected function _before() {
+		$this->CI = &get_instance();
     }
 
     protected function _after()
     {
+		
     }
 
     // tests
